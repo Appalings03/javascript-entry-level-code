@@ -29,3 +29,5 @@
     // undefined variable
     let something;
     console.log(something);
+
+    
