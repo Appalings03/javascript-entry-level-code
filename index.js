@@ -171,3 +171,28 @@ let dayToHour = function (days) {
 
 let c1 = dayToHour(1);
 console.log(c);
+
+//let balance = 100;
+let stock = 50;
+let price = 5;
+//let quantity = 100;
+function sellitem(quantity){
+    if(quantity <= stock){
+        stock -= quantity;
+        balance += price*quantity;
+        console.log("Purchased Complete",balance, stock);
+    }
+    else{
+        console.log("Not enough stock", stock);
+    }
+}
+sellitem(10)
+sellitem(10)
+sellitem(10)
+sellitem(10)
+sellitem(10)
+sellitem(10)
+sellitem(10)
+sellitem(10)
+sellitem(10)
+sellitem(10)
