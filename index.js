@@ -137,3 +137,37 @@ if(balance >= itemPrice) {
 else {
   console.log('not enough balance');
 }
+
+// challenge comparaison
+let distance = 150;
+let fuel = 100
+let distanceCondition = distance <=200 && distance >= 100;
+let isEngineFunctionning = true;
+if (!isEngineFunctionning || distance > 200){
+    console.log("won't make it"); 
+}
+
+else if (distanceCondition && fuel >= 100){
+    console.log("All Good");
+}
+
+else if (distance < 100 && fuel >= 25){
+    console.log("All Good");
+}
+
+// function
+function  houtToMinutes(hours){
+  let result =hours*60;
+  console.log(result);
+  return result;
+}
+
+let a1 = houtToMinutes(10);
+let b1 = houtToMinutes(20);
+
+let dayToHour = function (days) {
+  return days*24;
+};
+
+let c1 = dayToHour(1);
+console.log(c);
