@@ -228,6 +228,9 @@ console.log(player);
 delete player.health;
 console.log(player.health);
 */
+
+// Methode implementation
+
 let player = {
   health: 100,
   fun: 0,
@@ -269,3 +272,26 @@ player.play();
 player.eat('apple');
 player.eat('candy');
 console.log(player)
+
+// while loop
+
+function sendSignal(){
+  console.log("HELP!");
+};
+
+let i = 0;
+
+while(i<1000){
+  sendSignal();
+  i++;
+};
+
+let result1 = 0;
+
+let j = 0;
+
+while(j <= 10){
+  result1 = result1 + j;
+  j++;
+};
+console.log(result1);
