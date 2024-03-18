@@ -228,3 +228,44 @@ console.log(player);
 delete player.health;
 console.log(player.health);
 */
+let player = {
+  health: 100,
+  fun: 0,
+  /*
+  eatApple: function (){
+      console.log("Eat Apple");
+      this.health += 10;
+      console.log("Healh =",this.health);
+  },
+  eatCandy: function (){
+      console.log("Eat Candy");
+      this.health -= 5;
+      this.fun += 5;
+      console.log("Health =", this.health, "\nFun =", this.fun);
+  },
+  */
+  play: function(){
+      console.log("Play");
+      this.fun += 10;
+      console.log("Fun =", this.fun);
+  },
+  eat: function(food){
+      if(food == 'apple'){
+          this.health += 10;
+          console.log("Healh =",this.health);
+      }
+      else if(food == 'candy'){
+          this.health -= 5;
+          this.fun += 5;
+          console.log("Health =", this.health, "\nFun =", this.fun);
+      }else{
+          console.log("You can't eat that food");
+      }
+  }
+};
+//player.eatApple();
+//player.eatCandy();
+player.play();
+player.eat('apple');
+player.eat('candy');
+console.log(player)
