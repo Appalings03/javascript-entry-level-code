@@ -298,20 +298,42 @@ console.log(result1);
 
 //break and continue
 
-let fuel = 1000;
-let distance = 0;
+let fuel1 = 1000;
+let distance1 = 0;
 
-while (fuel > 0){
-    distance++;
+while (fuel1 > 0){
+    distance1++;
 
-    if (distance >= 100 && distance < 200){
+    if (distance1 >= 100 && distance1 < 200){
         continue;
     };
-    fuel --;
-    if (distance == 500){
+    fuel1 --;
+    if (distance1 == 500){
         break;
     };
 };
 
-console.log(distance);
-console.log(fuel);
+console.log(distance1);
+console.log(fuel1);
+
+//loop
+
+let population = 100;
+
+//population = population * 1.05;
+//population *= 1.05;
+
+let i1 = 0;
+while (i1 < 10) {
+    population *= 1.05
+    i1++;
+}
+
+console.log(population);
+i1 = 0;
+population = 100;
+
+for (let i = 0; i < 10; i++) {
+    population *= 1.05;
+}
+console.log(population);
