@@ -231,7 +231,7 @@ console.log(player.health);
 
 // Methode implementation
 
-let player = {
+let player1 = {
   health: 100,
   fun: 0,
   /*
@@ -268,10 +268,10 @@ let player = {
 };
 //player.eatApple();
 //player.eatCandy();
-player.play();
-player.eat('apple');
-player.eat('candy');
-console.log(player)
+player1.play();
+player1.eat('apple');
+player1.eat('candy');
+console.log(player1)
 
 // while loop
 
@@ -337,3 +337,23 @@ for (let i = 0; i < 10; i++) {
     population *= 1.05;
 }
 console.log(population);
+
+// DataBase
+
+let database =['turtle', 'cat','dog', 'bird'];
+console.log(database);
+console.log(database.length);
+
+let animal = database[0];
+console.log(animal);
+database[0] = 'dinosaur';
+console.log(database);
+
+let last = database[database.length - 1];
+console.log(last);
+
+database.push('lizard');
+console.log(database);
+
+database.pop();
+console.log(database);
