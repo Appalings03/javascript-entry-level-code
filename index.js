@@ -357,3 +357,47 @@ console.log(database);
 
 database.pop();
 console.log(database);
+
+// Iteration on Array
+
+let scores = [10, 20, 10];
+
+let i2 = 0;
+while (i2 < scores.length) {
+    scores[i2]++;
+    i2++;
+}
+console.log(scores);
+
+for(let i = 0; i < scores.length; i++) {
+    scores[i]++;
+}
+console.log(scores);
+
+scores.forEach(function(entry, index){
+console.log(entry,index);
+//entry++; -> augmente une copie de la valeur
+scores[index]++;    
+});
+console.log(scores);
+
+let catalog = [
+    {
+        title: 'Js forBeginners',
+        author: 'Zenva', 
+        copies:1
+    },
+    {
+        title: 'HTML forBeginners',
+        author: 'XYZ', 
+        copies: 1
+    }
+];
+
+catalog.forEach(function(entry){
+    if (entry.author == 'Zenva'){
+        entry.copies++;
+    }
+});
+
+console.log(catalog);
